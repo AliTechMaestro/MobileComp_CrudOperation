@@ -66,49 +66,49 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//        updateButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                boolean result ;
-//                DBHelper dbHelper = new DBHelper(MainActivity.this);
-//                if(!studentName.getText().toString().isEmpty() && !studentID.getText().toString().isEmpty()){
-//                    result =   dbHelper.updateStudent(Integer.parseInt(studentID.getText().toString()),studentName.getText().toString());
-//                    if(result){
-//                        studentName.setText("");
-//                        studentID.setText("");
-//                        resultText.setText("Record Updated");
-//                    }
-//                    else{
-//                        resultText.setText("No Record Found");
-//                    }
-//                }
-//                else{
-//                    resultText.setText("Please Enter Correct Value");
-//                }
-//            }
-//        });
+        updateButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                boolean result ;
+                DBHelper dbHelper = new DBHelper(MainActivity.this);
+                if(!studentName.getText().toString().isEmpty() && !studentID.getText().toString().isEmpty()){
+                    result =   dbHelper.updateStudent(Integer.parseInt(studentID.getText().toString()),studentName.getText().toString());
+                    if(result){
+                        studentName.setText("");
+                        studentID.setText("");
+                        resultText.setText("Record Updated");
+                    }
+                    else{
+                        resultText.setText("No Record Found");
+                    }
+                }
+                else{
+                    resultText.setText("Please Enter Correct Value");
+                }
+            }
+        });
 
-//        deleteButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                boolean result ;
-//                DBHelper dbHelper = new DBHelper(MainActivity.this);
-//                if(!studentID.getText().toString().isEmpty()){
-//                    result =   dbHelper.deleteStudent(Integer.parseInt(studentID.getText().toString()));
-//                    if(result){
-//                        studentName.setText("");
-//                        studentID.setText("");
-//                        resultText.setText("Record Deleted");
-//                    }
-//                    else{
-//                        resultText.setText("No Record Found");
-//                    }
-//                }
-//                else{
-//                    resultText.setText("Please Enter Correct Roll Number");
-//                }
-//            }
-//        });
+        deleteButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                boolean result ;
+                DBHelper dbHelper = new DBHelper(MainActivity.this);
+                if(!studentID.getText().toString().isEmpty()){
+                    result =   dbHelper.deleteStudent(Integer.parseInt(studentID.getText().toString()));
+                    if(result){
+                        studentName.setText("");
+                        studentID.setText("");
+                        resultText.setText("Record Deleted");
+                    }
+                    else{
+                        resultText.setText("No Record Found");
+                    }
+                }
+                else{
+                    resultText.setText("Please Enter Correct Roll Number");
+                }
+            }
+        });
 
 
     }
