@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Student Registration</string>
+    <string name="StudentName">Student Name</string>
+    <string name="RollNumber">Student ID</string>
+    <string name="IsEnrolled">IsEnrolled</string>
+    <string name="Add">Insert</string>
+    <string name="ButtonViewAll">Show</string>
+    <string name="DeleteById">Delete</string>
+    <string name="UpdateRecord">Update</string>
+    <string name="result">Result Message</string>
+</resources>
